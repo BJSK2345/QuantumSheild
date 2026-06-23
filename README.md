@@ -16,18 +16,6 @@ This is **not** demo-mode crypto. The PQC layer uses real FIPS 203/204/205 imple
 
 ---
 
-## 🚀 Quick start
-
-```bash
-# from the QSH/ folder
-npm run install:all     # installs root + server + client deps (first time only)
-npm run dev             # starts API (:3001) and client (:5173) together
-```
-
-Then open **http://localhost:5173**.
-
-> Run the two servers separately if you prefer: `npm run dev:server` and `npm run dev:client`.
-
 ---
 
 ## 1. Architecture
@@ -200,7 +188,6 @@ breaks exposure into **quantum / classical / practice** sub-scores for the UI ba
 5. **Frontend shell** — sidebar, theme, routing. *(done)*
 6. **Wire each page** to its endpoint. *(done)*
 7. **Polish** — gauge glow, badges, copy/download, honesty copy. *(done)*
-8. **Rehearse the demo** (below).
 
 ## 13. Stretch features
 
@@ -210,23 +197,6 @@ breaks exposure into **quantum / classical / practice** sub-scores for the UI ba
 - Severity-weighted **diff mode** (score before/after a fix).
 - Drag-and-drop multi-file scanning; PDF report export.
 - AST-based scanning (reduce regex false positives).
-
-## 14. Demo script for judges (~2 min)
-
-1. **Hook (15s).** "Quantum computers will break RSA and ECC. Attackers don't wait — they *harvest now
-   and decrypt later*. QuantumShield helps you get post-quantum ready today."
-2. **Scan (40s).** Scan tab → **Load sample** → **Run scan**. "16 findings, risk score 98, grade F."
-   Point to the glowing gauge, the quantum/classical/practice exposure bars, and one finding card with
-   its plain-English explanation and migration step.
-3. **Roadmap (20s).** "Those findings become a phased plan — contain leaked secrets first, then kill
-   MD5/SHA-1, then hybridize RSA/ECC with ML-KEM." Highlighted steps map to real findings.
-4. **Protect (30s).** Protect tab → choose a file → **Protect**. "Real ML-KEM-768 wraps an AES-256-GCM
-   key." Click **Send to decryptor → Decrypt & verify** — the file comes back, integrity verified. Then
-   change one character of the key to show it fails loudly.
-5. **Keys (15s).** Key Upgrade → **Generate all three** — real ML-KEM, ML-DSA, SLH-DSA keys at correct
-   FIPS sizes.
-6. **Close (10s).** "It's honest: quantum-*resistant*, not quantum-proof. It's risk assessment and
-   migration assistance — and the PQC is real, not a placeholder."
 
 ---
 
