@@ -2,14 +2,13 @@
   "name": "quantumshield",
   "version": "1.0.0",
   "private": true,
-  "description": "QuantumShield — scan for quantum-vulnerable cryptography and create post-quantum-ready encrypted packages.",
+  "description": "QuantumShield — scan for quantum-vulnerable cryptography and create post-quantum-ready encrypted packages. Fully client-side; deploys as a static site.",
   "scripts": {
-    "dev": "concurrently -n server,client -c green,cyan \"npm:dev:server\" \"npm:dev:client\"",
-    "dev:server": "npm --prefix server run dev",
-    "dev:client": "npm --prefix client run dev",
-    "start": "npm --prefix server start",
+    "dev": "npm --prefix client run dev",
     "build": "npm --prefix client run build",
-    "install:all": "npm install && npm --prefix server install && npm --prefix client install"
+    "preview": "npm --prefix client run preview",
+    "install:all": "npm install && npm --prefix client install",
+    "dev:server": "npm --prefix server run dev"
   },
   "devDependencies": {
     "concurrently": "^9.1.0"

@@ -39,10 +39,10 @@ export function Sidebar({ route, setRoute, online, collapsed, onToggleCollapse }
       ))}
 
       <div className="nav-spacer" />
-      <div className="nav-foot" title={collapsed ? (online ? 'API connected' : 'API offline') : undefined}>
+      <div className="nav-foot" title={collapsed ? 'Runs in your browser' : undefined}>
         <div className="row" style={{ gap: 7 }}>
-          <span className="dot" style={{ color: online === false ? 'var(--critical)' : 'var(--low)' }}>●</span>
-          <span className="nav-label">{online === false ? 'API offline' : 'API connected'}</span>
+          <span className="dot" style={{ color: 'var(--low)' }}>●</span>
+          <span className="nav-label">In-browser engine</span>
         </div>
         <div className="nav-foot-desc">
           Real ML-KEM-768 · ML-DSA-65 · SLH-DSA.<br />

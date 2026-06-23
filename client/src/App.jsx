@@ -60,9 +60,9 @@ export default function App() {
               <div className="crumb">QuantumShield · {crumb}</div>
             </div>
             <div className="topbar-actions">
-              <div className={`status-pill ${online === false ? 'offline' : ''}`}>
+              <div className="status-pill">
                 <span className="live" />
-                {online === null ? 'Connecting…' : online ? 'Backend online' : 'Backend offline — start the server'}
+                {online === null ? 'Loading engine…' : 'In-browser engine'}
               </div>
               <button
                 className="icon-btn"
