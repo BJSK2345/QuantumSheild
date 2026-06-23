@@ -14,7 +14,6 @@ into hybrid quantum-resistant packages.
 This is **not** demo-mode crypto. The PQC layer uses real FIPS 203/204/205 implementations
 (`@noble/post-quantum`): **ML-KEM-768, ML-DSA-65, and SLH-DSA**.
 
----
 
 ---
 
